@@ -130,8 +130,8 @@ lab2-app-6df9f56b49-qnq8k   1/1     Running   0          93m   172.17.0.2   mini
 
 После выполнения данной команды откроем в браузере страницу http://localhost:3000 и обновим несколько раз.
 
-<img src="img/lab2_1.png" alt="drawing" width="500"/>
-<img src="img/lab2_2.png" alt="drawing" width="500"/>
+<img src="img/lab2_1.PNG" alt="drawing" width="500"/>
+<img src="img/lab2_2.PNG" alt="drawing" width="500"/>
 
 Как видно на рисунках, имя и IP контейнера изменяется. Это происходит потому, что сервис проксирует запросы то на один под, то на другой.
 
