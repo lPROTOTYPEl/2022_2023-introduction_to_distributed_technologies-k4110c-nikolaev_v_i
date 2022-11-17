@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: lab3-app-cm
+data:
+  REACT_APP_USERNAME: vladislav.nikolaev
+  REACT_APP_COMPANY_NAME: ITMO
