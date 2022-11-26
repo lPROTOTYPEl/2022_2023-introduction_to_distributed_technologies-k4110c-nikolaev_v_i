@@ -1,0 +1,19 @@
+apiVersion: projectcalico.org/v3
+kind: IPPool
+metadata:
+  name: region-east-ippool
+spec:
+  cidr: 10.244.0.0/24
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: zone == "east"
+---
+apiVersion: projectcalico.org/v3
+kind: IPPool
+metadata:
+  name: region-west-ippool
+spec:
+  cidr: 10.244.1.0/24
+  ipipMode: Always
+  natOutgoing: true
+  nodeSelector: zone == "west"
