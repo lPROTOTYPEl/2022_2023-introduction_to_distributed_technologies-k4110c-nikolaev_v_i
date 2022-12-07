@@ -117,7 +117,7 @@ lab4-app-54949dc7fb-p2pmm   1/1     Running   0          25s   10.244.1.193   mu
 lab4-app-54949dc7fb-vpbkh   1/1     Running   0          25s   10.244.0.129   multinode-cluster       <none>           <none>
 ```
 
-Как видно из вывода, один под разместился на ноде `multinode-cluster`, которой была присвоена метка `region=east`, и получилось IP-адрес из адресного пространства: `10.244.0.0/24`. Второй же под запустился на ноде `multinode-cluster-m02` с меткой `region=west` и получил IP-адрес из пула адресов `10.244.1.0/24`.
+Как видно из вывода, один под разместился на ноде `multinode-cluster`, которой была присвоена метка `zone=east`, и получилось IP-адрес из адресного пространства: `10.244.0.0/24`. Второй же под запустился на ноде `multinode-cluster-m02` с меткой `zone=west` и получил IP-адрес из пула адресов `10.244.1.0/24`.
 
 Вместе с `deployment` был также развернут сервис типа LoadBalancer для доступа к приложению. Получим доступ к нему через туннель minikube и проверим ответы приложения в браузере.
 
@@ -129,6 +129,10 @@ $ minikube tunnel --profile=multinode-cluster
 
 Тестирование приложения в браузере:
 
-<img src="img/ip1.png" alt="drawing" width="600"/>
+<img src="img/ip1.PNG" alt="drawing" width="600"/>
 
-<img src="img/ip2.png" alt="drawing" width="600"/>
+<img src="img/ip2.PNG" alt="drawing" width="600"/>
+
+### Схема организации контейнеров и сервисов
+
+<img src="img/diag.PNG" alt="drawing" width="600"/>

@@ -153,3 +153,6 @@ Builing frontend
 build finished
 Server started on port 3000
 ```
+### Схема организации контейнеров и сервисов
+
+<img src="img/diag.PNG" alt="drawing" width="600"/>

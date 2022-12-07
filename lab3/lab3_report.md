@@ -129,3 +129,7 @@ $ minikube tunnel
 TLS-сертификат:
 
 <img src="img/sert.PNG" alt="drawing" width="600"/>
+
+### Схема организации контейнеров и сервисов
+
+<img src="img/diag.PNG" alt="drawing" width="600"/>
